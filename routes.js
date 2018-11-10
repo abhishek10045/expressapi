@@ -7,7 +7,7 @@ router.get('/', controllers.getModels);
 
 router.get('/:id', controllers.getModel);
 
-router.put('/:id', controllers.putModel);
+router.patch('/:id', controllers.patchModel);
 
 router.delete('/:id', controllers.deleteModel);
 

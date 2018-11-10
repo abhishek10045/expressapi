@@ -28,7 +28,7 @@ module.exports.getModels = (req, res) => {
     });
 };
 
-module.exports.putModel = (req, res) => {
+module.exports.patchModel = (req, res) => {
     Model.updateOne({_id : req.params.id}, {field : req.body.field}, (err, doc) => {
         if (err)
             res.send(err);
